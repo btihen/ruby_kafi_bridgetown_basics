@@ -267,12 +267,16 @@ https://btihen.me/post_ruby_rails/bridgetown_1_x_ruby_static_stite_orientation/
 
 # Talk and Code
 
-Github (btihen)
+**Github (btihen):** https://github.com/btihen/ruby_kafi_bridgetown_basics
 
-Code:
+Code: https://github.com/btihen/ruby_kafi_bridgetown_basics/tree/main/ruby_kafi_bridgetown_code
 
-Slides:
+Slides: https://github.com/btihen/ruby_kafi_bridgetown_basics/tree/main/ruby_kafi_bridgetown_slides
+
+* slides are run with: npx slidev
+* slides are made using: https://sli.dev/
 
 <br>
 
 # Question & Comments
+
