@@ -251,6 +251,23 @@ if we restart Bridgetown we should have our new links when we visit the **blogs*
 
 ---
 
+# Deploying
+
+Plugins make it easy
+
+1. Push your project to github or gitlab
+2. Create/commit the deploy config:
+```bash
+bundle exec bridgetown configure netlify
+git add bin/netlify.sh netlify.toml
+git commit -m "add netlify config"
+git push
+```
+3. Connect your netlify account to the repo you just created.
+4. deploy within the netlify site - in 5-10 mins
+
+---
+
 # Javascript, CSS, Tailwind & Fonts
 
 Customizing Look and Feel:
