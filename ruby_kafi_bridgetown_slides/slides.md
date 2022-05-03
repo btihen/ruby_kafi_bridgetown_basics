@@ -108,23 +108,17 @@ site search (using lunar.js)
 bundle add bridgetown-quick-search -g bridgetown_plugins
 
 # in frontend/javascript/index.js file add:
-import "bridgetown-quick-search"
+import "bridgetown-quick-search/dist"
+# [Frontend] esbuild: frontend bundling started...
+# [Frontend]  > node_modules/bridgetown-quick-search/frontend/javascript/index.js:22:0: error: Unexpected "@"
+# [Frontend]     22 │ @customElement("bridgetown-search-form")
+# [Frontend]        ╵ ^
 
 # add to template (probably navbar) src/_components/navbar.erb
 <%= liquid_render "bridgetown_quick_search/search" %>
 ```
 
 [full instructions](https://github.com/bridgetownrb/bridgetown-quick-search)
-
-Unfortunatly, currently it has a javascript error loading:
-```bash
-[Frontend] esbuild: frontend bundling started...
-[Frontend]  > node_modules/bridgetown-quick-search/frontend/javascript/index.js:22:0: error: Unexpected "@"
-[Frontend]     22 │ @customElement("bridgetown-search-form")
-[Frontend]        ╵ ^
-```
-
-see: https://github.com/bridgetownrb/bridgetown-quick-search/issues/12
 
 ---
 
@@ -282,6 +276,14 @@ https://btihen.me/post_ruby_rails/bridgetown_1_x_ruby_static_stite_orientation/
 
 ---
 
+# Drawbacks
+
+* took me a while to understand the project's vocabulary
+* it currently has no non-technical md editor
+* `bin/bridgetown start` (puma - port 4000) frequently doesn't stop/start properly.
+
+---
+
 # Talk and Code
 
 **Github (btihen):** https://github.com/btihen/ruby_kafi_bridgetown_basics
@@ -296,4 +298,3 @@ Slides: https://github.com/btihen/ruby_kafi_bridgetown_basics/tree/main/ruby_kaf
 <br>
 
 # Question & Comments
-
